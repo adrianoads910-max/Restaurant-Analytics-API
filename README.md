@@ -146,6 +146,15 @@ Retorno:
 ```
 
 ---
+Vídeo Demo
+🎬 Assista ao vídeo de demonstração (5-10 min) - https://youtu.be/Q8QE1UwNi0I
+
+O vídeo mostra:
+
+Arquitetura da solução
+Funcionalidades principais
+Performance e otimizações
+Deploy e infraestrutura
 
 # 🐳 Deploy com Docker (Backend + Frontend)
 
