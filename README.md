@@ -1,9 +1,4 @@
 
----
-
-## ✅ README.md atualizado (copie e cole no GitHub)
-
-```markdown
 # 🍽️ Restaurant Analytics — IA + Dashboard + API
 
 
