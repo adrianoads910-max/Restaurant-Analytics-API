@@ -6,16 +6,6 @@
 ```markdown
 # 🍽️ Restaurant Analytics — IA + Dashboard + API
 
-> Business Intelligence para restaurantes com insights automáticos e IA (Groq + FastAPI + React)
-
----
-
-![GitHub repo size](https://img.shields.io/github/repo-size/adrianoads910-max/Restaurant-Analytics-API?color=green)
-![GitHub last commit](https://img.shields.io/github/last-commit/adrianoads910-max/Restaurant-Analytics-API?color=blue)
-![Issues](https://img.shields.io/github/issues/adrianoads910-max/Restaurant-Analytics-API?color=orange)
-![License](https://img.shields.io/github/license/adrianoads910-max/Restaurant-Analytics-API?color=purple)
-
----
 
 ## 📊 Sobre o Projeto
 
