@@ -51,7 +51,7 @@ src/pages/Overview.tsx
 ---
 
 # 🚀 Como rodar
-
+Obs: Por conta da documentação extensa foi optado o deploy apenas local, platafromas como Render tem memoria reduzida em versões gratuitas
 ## ✅ 1. Backend
 
 ➡️ Instalar dependências
