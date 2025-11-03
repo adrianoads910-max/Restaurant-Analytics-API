@@ -199,20 +199,7 @@ services:
 📌 Fullstack & BI for Restaurants
 🔗 [https://github.com/adrianoads910-max](https://github.com/adrianoads910-max)
 
-Se quiser publicar este projeto, posso te ajudar com:
 
-* Deploy no **Railway / Render.com**
-* Setup com domínio e HTTPS
-* Versão **multi-restaurante para franquias**
-
-Só pedir 😉
-
-```
-
-
----
-
-### ✅ Se quiser, posso também:
 
 - Criar **GIF / vídeo** demonstrando o dashboard
 - Gerar um **banner de capa** para o GitHub
