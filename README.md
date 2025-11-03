@@ -195,10 +195,4 @@ services:
 🔗 [https://github.com/adrianoads910-max](https://github.com/adrianoads910-max)
 
 
-
-- Criar **GIF / vídeo** demonstrando o dashboard
-- Gerar um **banner de capa** para o GitHub
-- Criar **release notes** para a versão 1.0
-
-Só dizer: **"gerar mídia para o GitHub"**.
 ```
