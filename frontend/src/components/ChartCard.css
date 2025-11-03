@@ -1,0 +1,9 @@
+/* src/components/ChartCard.css */
+.card {
+  padding: 16px;
+  color: black;
+  background: white;
+  border-radius: 8px;
+  box-shadow: rgba(0,0,0,.1) 0px 3px 6px;
+  min-width: 180px;
+}

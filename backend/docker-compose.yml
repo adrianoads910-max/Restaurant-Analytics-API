@@ -1,0 +1,63 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: godlevel-db
+    environment:
+      POSTGRES_DB: challenge_db
+      POSTGRES_USER: challenge
+      POSTGRES_PASSWORD: challenge_2024
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database-schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U challenge -d challenge_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: .    # ✅ Agora o Dockerfile está no mesmo diretório
+      dockerfile: Dockerfile
+    container_name: analytics-backend
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      DB_HOST: godlevel-db
+      DB_PORT: 5432
+      DB_NAME: challenge_db
+      DB_USER: challenge
+      DB_PASSWORD: challenge_2024
+      CORS_ORIGIN: http://localhost:5173
+
+  frontend:
+    build:
+      context: ../frontend   # ✅ caminho relativo ajustado
+      dockerfile: Dockerfile
+    container_name: analytics-frontend
+    depends_on:
+      - backend
+    ports:
+      - "5173:80"
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: godlevel-pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@godlevel.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    ports:
+      - "5050:80"
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:
